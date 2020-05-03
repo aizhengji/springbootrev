@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.azj.dao.UserDao">
+	<select id="selectAll" resultType="user">
+		select * from t_user
+	</select>  
+	
+	<insert id="insertUser">
+		insert into t_user(id,username,password) values(#{id},#{userName},#{password})
+	</insert>
+	<!--<update id="update">
+		update d_book set book_name=#{name},book_price=#{price} where book_id=#{id}
+	</update>-->
+	<!--<delete id="deleteUser">
+		delete from t_user where id=#{id}
+	</delete>
+	
+	<select id="queryByUser" resultType="User">
+		select * from t_user where id=#{id}
+	</select>-->
+
+
+</mapper>

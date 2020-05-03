@@ -1,0 +1,19 @@
+server:
+  context-path: /springboot
+  port: 8999
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/test
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+mybatis:
+  type-aliases-package: com.azj.entity
+  mapper-locations: classpath:com/azj/mapper/*Mapper.xml
+logging:
+  file: my.log
+  lo
